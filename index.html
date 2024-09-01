@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>aniket gupta portfolio</title>
+    <script src="https://kit.fontawesome.com/51b199799f.js" crossorigin="anonymous"></script><!--- for icon ---->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- page loader -->
+    <div id="center">
+        <div class="ring"> </div>
+        <span>Loading...</span>
+    </div>
+    <script>
+        var loader = document.getElementById("center");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+
+
+    <!-- for scrolling up  -->
+    <div class="scrollup">
+        <i class="fas fa-angle-up"><a href="#header"><br> Top </a></i>
+    </div>
+
+    <!-- -------------page 1 home------------- -->
+    <div class="page1">
+        <div class="bgbubbles">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- ----------- for navbar and logo --------- -->
+        <div id="header">
+            <nav>
+                <p class="pagelogo" style=" font-family:Arial, Helvetica, sans-serif"><span>A</span>niket
+                    <span>G</span>upta
+                </p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Tech Projects</a></li>
+                    <li><a href="#Certificate">Certificate</a></li>
+                    <li><a href="#EXTRA-CURRICULAR-ACTIVITIES">Extra Curricular Activities</a></li>
+                    <li><a href="#Sketchs">Sketchs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <div class="theme">
+                            <label class="switch">
+                                <input type="checkbox" id="themeToggle">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+
+        <!-- -------------first page image and content ------- -->
+        <section class="home" id="home">
+
+            <div class="home-content">
+                <h3>ML Engeener</h3>
+                <h1>I AM <br><span data-text=" ANIKET_GUPTA "> ANIKET_GUPTA </h1><br><br><br>
+                <p> Passionate about continuous learning in my daily life,recognizing knowledge<br> as the key to
+                    success. I take joy in applying acquired knowledge practically.</p>
+
+                <div class="social-media">
+                    <a href="https://leetcode.com/u/Aniket-gupta31/" target="_blank"><i class="fa-solid fa-bug"></i></a>
+                    <a href="https://github.com/ANIKET-GUPTA31" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aniket-gupta-technology-enthusiast/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/aniket_gupta721/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="image/Aniket resume.pdf" target="_blank" download="" class="button"><i
+                        class="fa-solid fa-download"></i> Download CV</a>
+            </div>
+
+            <div class="home-img">
+                <div class="imgbox">
+                    <img src="image/ProfileImg.png" alt="first page logo">
+                    <h2>ANIKET GUPTA <br>
+                        <span>AI/ML ENGINEER</span><br><br>
+                        <a href="#contact"><i class="fa-solid fa-user-shield"></i> HIRE ME</a>
+                    </h2>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+    </div>
+
+    <!---------- page 2 ABOUT  ------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- data-aos="zoom-in"   --for zoom effect  -->
+                <div class="about-col-1"><!------ about image ------->
+                    <img src="image/Aniket_3Dcherecter.png" alt="about image">
+                </div>
+
+                <!-----content text------>
+                <!-- data-aos="slide-up" -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">about me</h1><br><!----- about text  --->
+                    <p>🎓 Currently pursuing BSc IT | Proficient in C++ with OOPS, SQL, and Python | Skilled in Canva
+                        design, Microsoft Excel, PowerPoint, and database management systems.
+                        <br><br>
+                        🔍 Passionate about continuous learning in my daily life, recognizing knowledge as the key to
+                        success. I take joy in applying acquired knowledge practically.
+                        <br><br>
+                        💡 Thrive in an environment that values daily learning, as time is precious to me. I invest my
+                        time in meaningful activities, constantly seeking growth opportunities.
+                        <br><br>
+                        💼 Committed to delivering excellence in every task undertaken.
+                    </p>
+
+                    <!----- about blow skills, education , expreience ------>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')"><i
+                                class="fa-solid fa-user-graduate"></i> Education</p>
+                        <p class="tab-links" onclick="opentab('skills')"><i class="fa-solid fa-clipboard-check"></i>
+                            Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"><i class="fa-solid fa-user-astronaut"></i>
+                            Expreience</p>
+                    </div>
+
+                    <!----- for education section ----->
+                    <div class="tab-contents  active-tab" id="education">
+                        <ul>
+                            <li><span>BSc IT (Bachelor of Science Information Technology)</span><br>
+                                B.K.Birla college kalyan(W)<br>
+                                JUNE 2023 - JUNE 2026<br>
+                                CGPA : 9.82
+                            </li>
+                            <li><span>HSC (Higher Secondary Certificate)</span><br>
+                                Smt. Chandibai Himathmal Mansukhani College (ulhasanagar)<br>
+                                JUNE 2022 - APRILE 2023<br>
+                                Percentage :72.33%
+                            </li>
+                            <li><span>SSC (Secondary School Certificate)</span><br>
+                                Sankalp Hindi High School (vithalwadi)<br>
+                                JUNE 2020 - APRILE 2021<br>
+                                Percentage : 86%
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--- for skills section --->
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>AI/ML ENGINEER</span><br>NLTK , Flask , Numpy , Matplotlib , Pandas , Streamlit
+                            </li>
+                            <li><span>WEB DEVELOPER</span><br>HTML, CSS, JAVASCRIPT, PHP , MERN Stack , PL/SQL</li>
+                            <li><span>DATA ANALYST</span><br>Excel , Power BI</li>
+                            <li><span>Data STRUCTURE AND ALGORITHM</span><br> C/C++ , PYTHON</li>
+                            <li><span>Programming languages</span><br> C/C++ , PYTHON , JAVA </li>
+                            <li><span>version control system</span><br>GIT , GITHUB </li>
+                            <li><span>operating system</span><br>KALI LINUX , Window</li>
+                            <li><span> Othet Skills </span><br>SKETCHING, Kabaddi</li>
+                        </ul>
+                    </div>
+
+                    <!------- for experience section ---->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship at Codtech IT Solution PVT.LTD</span><br>
+                                Duration : 1 month<br>
+                                JULY 2024 - AUGUST 2024<br>
+                                Role : Python Programming<br>
+                            </li>
+                            <li><span>Internship at Codtech IT Solution PVT.LTD</span><br>
+                                Duration : 2 month<br>
+                                JULY 2024 - SEPTEMBER 2024<br>
+                                Role : Web Development<br>
+                            </li>
+                            <li><span>Internship at Cloud Counselage Pvt. Ltd</span><br>
+                                Duration : 2 month<br>
+                                JULY 2024 - SEPTEMBER 2024<br>
+                                Role : Al & Machine Learning<br>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!----- page 3 project -->
+    <div id="project">
+        <!-- <div class="container" data-aos="fade-left"> -->
+        <h1 class="sub-title">my tech projects</h1>
+
+        <div class="slider-wrapper-page3">
+            <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+            </button>
+
+            <div class="work-list page3">
+
+                <div class="work">
+                    <img src="tech_project_img/budgetbuddy.png" alt="budgetbuddy">
+                    <div class="layer">
+                        <h3>BUDGETBUDDY : A Finance Tracker </h3>
+                        <p>The Personal Finance Tracker is a comprehensive application designed to help users manage
+                            their finances effectively. This tool allows users to add, delete, and view financial
+                            transactions, offering detailed summaries of income and expenses. The application provides
+                            visual insights through various charts, including monthly income and expense bar charts and
+                            pie charts. Built with Streamlit for a sleek interface and Matplotlib for data
+                            visualization, this tracker simplifies financial management and analysis.
+                        </p>
+                        <a href="https://budgetbuddy2005.streamlit.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="tech_project_img/burger_hut.png" alt="weather-app">
+                    <div class="layer">
+                        <h3>Burger Hut : A E-Commerce Website </h3>
+                        <p>Berger Hut website! This project is a restaurant website designed to showcase Berger Hut's
+                            offerings, including the menu, reservations, testimonials, gallery, and contact
+                            information.<br>
+                            Technology: HTML, CSS, JAVASCRIPT
+                        </p>
+                        <a href="https://aniket-gupta31.github.io/CODTECH-WEB-DEVELOPMENT-TASK2/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="tech_project_img/WeatherApp.png" alt="weather-app">
+                    <div class="layer">
+                        <h3>Weather App </h3>
+                        <p>Users can enter the name of a city and receive real-time weather data,
+                            including temperature, weather description, humidity, and wind speed.<br>
+                            Technology: HTML, CSS, JAVASCRIPT
+                        </p>
+                        <a href="https://aniket-gupta31.github.io/Weather-App/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="tech_project_img/clock.png" alt="clock">
+
+                    <div class="layer">
+                        <h3>Analog clock </h3>
+                        <p>This project is a simple clock with interactive features, including changing the
+                            background and navigating through different background options.<br><br>
+
+                            <b>Features</b><br>
+                            <u>Digital Clock:</u> Displays the current time in a digital format.<br><br>
+                            <u>Change Background:</u> Allows the user to change the background of the clock.<br><br>
+                            <u>Navigation Buttons: </u>Provides buttons to navigate through different
+                            backgrounds.<br>
+                            Technology: HTML, CSS, JAVASCRIPT
+                        </p>
+                        <a href="https://aniket-gupta31.github.io/different-background-changer-clock/"
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="tech_project_img/solarsystem.png" alt="solar-system">
+
+                    <div class="layer">
+                        <h3>Solar System</h3>
+                        <p>This project visualizes the Solar System with HTML and CSS. It displays the Sun and the
+                            planets, along with a sidebar containing images and names of each celestial
+                            body.<br><br>
+                            Technology: HTML, CSS, JAVASCRIPT
+                        </p>
+                        <a href="https://aniket-gupta31.github.io/solar-system/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="tech_project_img/imageslider.png" alt="image sliding web page">
+                    <div class="layer">
+                        <h3>Image sliding web page</h3>
+                        <p>This project is an image carousel implemented with HTML, CSS, and JavaScript. It displays
+                            a series of images with a "See More" button, and users can navigate through the images
+                            using previous and next buttons.<br><br>
+                            Technology: HTML, CSS, JAVASCRIPT
+                        </p>
+                        <a href="https://aniket-gupta31.github.io/3D-image-sliding-/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="tech_project_img/3dimageslider2.png" alt="3d image sliding web page">
+                    <div class="layer">
+                        <h3>3D Image sliding web page</h3>
+                        <p>This project showcases a 3D animation slider with images, overlaid with a background and
+                            author information.<br><br>
+                            <b>Features</b><br>
+                            <u> 3D Image Slider:</u></b> Displays a series of images in a 3D slider format.<br><br>
+                            <u>Background Image:</u> Features a scenic background image with a blur effect.<br><br>
+                            <u> Author Information: </u>Provides details about the author, including name, title,
+                            and a
+                            brief bio.<br><br>
+                            Technology: HTML, CSS, JAVASCRIPT
+                        </p>
+                        <a href="https://aniket-gupta31.github.io/3D-sliding-image-/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+            </button>
+        </div>
+
+        <a href="https://github.com/ANIKET-GUPTA31?tab=repositories" target="_blank" class="btn"><i
+                class="fa-solid fa-eye"></i> see more</a>
+    </div>
+
+
+    <!----- page 4 certificate -->
+    <div id="Certificate">
+        <!-- <div class="container" data-aos="fade-right"> -->
+        <h1 class="sub-title">my certificate</h1>
+
+        <div class="slider-wrapper-page4">
+            <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+            </button>
+
+            <div class="work-list page4">
+
+                <div class="work" id="work">
+                    <img src="certificate_img/streamlining.png" alt="streamlining">
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of completion </h3>
+                        <p>Streamlining Your Work with Microsoft Copilot<br>
+                            Issued by: LinkedIn & Microsoft <br>
+                            Date: 12/08/2024
+                        </p>
+                        <a href="certificate_img/gen Ai.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work">
+                    <img src="certificate_img/Introduvtion_to_kali_linux.png" alt="Introduvtion_to_kali_linux">
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of completion </h3>
+                        <p>Introduction to Kali Linux Basics<br>
+                            Issued by: Simplilearn<br>
+                            Date: 13/08/2024
+                        </p>
+                        <a href="certificate_img/gen Ai.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work">
+                    <img src="certificate_img/gen Ai.png" alt="generative AI">
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of completion </h3>
+                        <p>Generative AI : The Evolution of Thoughful Online Search<br>
+                            Issued by: LinkedIn & Microsoft <br>
+                            Date: 13/07/2024
+                        </p>
+                        <a href="certificate_img/gen Ai.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work">
+                    <img src="certificate_img/ChatGPT for Cybersecurity.png" alt="Website UIUX Designing using ChatGPT">
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of completion </h3>
+                        <p>ChatGPT for Cybersecurity<br>
+                            Issued by: Simplilearn<br>
+                            Date: 13/08/2024
+                        </p>
+                        <a href="certificate_img/gen Ai.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work">
+                    <img src="certificate_img/what_is_gen_ai.png" alt="what_is_gen_ai">
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of completion </h3>
+                        <p>What is gen AI<br>
+                            Issued by: LinkedIn & Microsoft <br>
+                            Date: 11/07/2024
+                        </p>
+                        <a href="certificate_img/gen Ai.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work">
+                    <img src="certificate_img/Website UIUX Designing using ChatGPT.png"
+                        alt="Website UIUX Designing using ChatGPT">
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of completion </h3>
+                        <p>Website UI/UX Designing using ChatGPT : Become a UI UX designer<br>
+                            Issued by: Simplilearn<br>
+                            Date: 26/07/2024
+                        </p>
+                        <a href="certificate_img/gen Ai.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work">
+                    <img src="certificate_img/designusingaitools.png" alt="design_using_ai_tools">
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of completion </h3>
+                        <p>Design Using AI Tools <br>
+                            Issued by: BK BIRLA COLLEGE KALYAN (W) <br>
+                            Date: 31/01/2024
+                        </p>
+                        <a href="certificate_img/designusingaitools.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work">
+                    <img src="certificate_img/environmentalTecnology.png" alt="environmental Tecnology">
+
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of completion</h3>
+                        <p>Envornmental Technology <br>
+                            Issued by: BK BIRLA COLLEGE KALYAN (W) <br>
+                            Date: 05/01/2024
+                        </p>
+                        <a href="certificate_img/environmentalTecnology.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work">
+                    <img src="certificate_img/intrpductionToC++.png" alt="intrpduction To C++">
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of completion</h3>
+                        <p>introduction To c++<br>
+                            Issued by: sololearn
+                        </p>
+                        <a href="certificate_img/intrpductionToC++.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work">
+                    <img src="certificate_img/introductionToHTML.png" alt="introduction To HTML">
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of completion</h3>
+                        <p>introduction To HTML<br>
+                            Issued by: sololearn
+                        </p>
+                        <a href="certificate_img/introductionToHTML.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work">
+                    <img src="certificate_img/introductiontocss.png" alt="introduction To CSS">
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of completion</h3>
+                        <p>introduction To CSS<br>
+                            Issued by: sololearn
+                        </p>
+                        <a href="certificate_img/introductiontocss.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work">
+                    <img src="certificate_img/codingchallenge.png" alt="coding challenge">
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of paricipation</h3>
+                        <p>coding challenge competion<br>
+                            Issued by: B.K.Birla college kalyan(w)<br>
+                            Date: 24/02/2024
+                        </p>
+                        <a href="certificate_img/codingchallenge.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work">
+                    <img src="certificate_img/speedcode.png" alt="coding challenge">
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of paricipation</h3>
+                        <p>Speed code competion <br>
+                            Issued by: B.K.Birla college kalyan(w)<br>
+                            Date: 17/02/2024
+                        </p>
+                        <a href="certificate_img/speedcode.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work">
+                    <img src="certificate_img/DrawingCompetion.png" alt="coding challenge">
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of paricipation</h3>
+                        <p>Drawing competion <br>
+                            Issued by: B.K.Birla college kalyan(w)<br>
+                            Date: 16/09/2023
+                        </p>
+                        <a href="certificate_img/DrawingCompetion.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work">
+                    <img src="certificate_img/geeksforgeeks.png" alt="coding challenge">
+                    <div class="layer">
+                        <h3 style="color:#59b2f4">certificate of paricipation</h3>
+                        <p>Geeks For Geeks competion <br>
+                            Issued by: B.K.Birla college kalyan(w)<br>
+                            Date: 17/02/2024
+                        </p>
+                        <a href="certificate_img/geeksforgeeks.png" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+            </button>
+
+        </div>
+        <div class="btncontainer">
+            <a href="https://drive.google.com/folderview?id=1ZG3HYNJSc7eNXw1P0pZNb-MqXaIU54kN" target="_blank"
+                class="btn"><i class="fa-solid fa-eye"></i> see more</a>
+        </div>
+
+    </div>
+
+
+    <!-- <div class="container" data-aos="fade-left"> -->
+    <!------ page 5 EXTRA CURRICULAR ACTIVITIES  ------->
+    <div id="EXTRA-CURRICULAR-ACTIVITIES">
+        <div class="container">
+            <h1 class="sub-title">EXTRA CURRICULAR ACTIVITIES :</h1>
+            <div class="slider-wrapper-page5">
+                <button id="prev-slide" class="slide-button material-symbols-rounded">
+                    chevron_left
+                </button>
+                <div class="EXTRACURRICULARACTIVITIES-list">
+
+                    <div>
+                        <i class="fa-solid fa-brain"></i>
+                        <h2> Quiz Mania The Brain Blaster</h2>
+                        <p>Organized successful college-wide quiz competition " Quiz mania the brain blaster "
+                            showcasing
+                            leadership and event management skills.
+                        </p>
+                    </div>
+                    <div class="activitiesCard">
+                        <i class="fa-solid fa-school"></i>
+                        <h2>Teacher Day College Event</h2>
+                        <p>I organized a successful Teacher's Day event at my college, demonstrating my leadership and
+                            event
+                            management skills. This experience highlighted my ability to coordinate and execute
+                            large-scale
+                            events efficiently.</p>
+                    </div>
+                    <div class="activitiesCard">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h2>Blockchain Seminar </h2>
+                        <p> I recently contributed to the technical team at a blockchain seminar, where I effectively
+                            resolved various technical issues. This experience enhanced my problem-solving skills and
+                            deepened my understanding of blockchain technology.</p>
+                    </div>
+                    <div class="activitiesCard">
+                        <i class="fa-solid fa-microchip"></i>
+                        <h2>TechExpression</h2>
+                        <p>At our college's annual "TechExpression" event, I volunteered in the technical department and
+                            actively participated in various programs. The highlight was winning second prize in the
+                            "Geeks vs Geeks" competition, which came with a prize money of 1500. Being a part of this
+                            event was both enjoyable and rewarding. It was an excellent opportunity to showcase our
+                            technical skills and teamwork.</p>
+                    </div>
+
+                    <div class="activitiesCard">
+                        <i class="fa-solid fa-ranking-star"></i>
+                        <h2>Activities and Societies</h2>
+                        <p>During my school years, I actively engaged in various activities and societies, participating
+                            in Kabaddi, essay competitions, carrom, and drama competitions. Serving as the head boy, I
+                            led my Kabaddi team to a first-place victory, showcasing my leadership skills. I organized
+                            numerous events, fostering a vibrant school environment. My involvement in both curricular
+                            and extracurricular activities contributed to a well-rounded and enriching school
+                            experience.</p>
+                    </div>
+
+                </div>
+                <button id="next-slide" class="slide-button material-symbols-rounded">
+                    chevron_right
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- page 6 sketh -->
+    <div id="Sketchs">
+        <div class="wrapper">
+            <h1 class="sub-title">Sketchs </h1>
+            <!-- filter Items -->
+            <nav>
+                <div class="items">
+                    <span class="item active" data-name="all">All</span>
+                    <span class="item" data-name="facesketch">Face sketch </span>
+                    <span class="item" data-name="arts">ARTS</span>
+                    <span class="item" data-name="nature">nature</span>
+                </div>
+            </nav>
+            <!-- filter Images -->
+            <div class="gallery">
+                <div class="image" data-name="nature"><span><img src="sketchs_img/nature2.png" alt="nature2"></span>
+                </div>
+                <div class="image" data-name="nature"><span><img src="sketchs_img/nature1.png" alt="nature 1"></span>
+                </div>
+                <div class="image" data-name="facesketch"><span><img src="sketchs_img/face1.png" alt="face1"></span>
+                </div>
+                <div class="image" data-name="facesketch"><span><img src="sketchs_img/face2.png" alt="face3"></span>
+                </div>
+                <div class="image" data-name="facesketch"><span><img src="sketchs_img/face 5.png" alt="face5"></span>
+                </div>
+                <div class="image" data-name="arts"><span><img src="sketchs_img/art 5.png" alt="art5"></span></div>
+                <div class="image" data-name="arts"><span><img src="sketchs_img/art4.png" alt="art4"></span></div>
+                <div class="image" data-name="arts"><span><img src="sketchs_img/art2.png" alt="art2"></span></div>
+                <div class="image" data-name="arts"><span><img src="sketchs_img/art3.png" alt="art3"></span></div>
+                <div class="image" data-name="facesketch"><span><img src="sketchs_img/face4.png" alt="face4"></span>
+                </div>
+                <div class="image" data-name="facesketch"><span><img src="sketchs_img/face6.png" alt="face6"></span>
+                </div>
+                <div class="image" data-name="arts"><span><img src="sketchs_img/art6.png" alt="art6"></span></div>
+                <div class="image" data-name="facesketch"><span><img src="sketchs_img/face7.png" alt="face7"></span>
+                </div>
+                <div class="image" data-name="facesketch"><span><img src="sketchs_img/face3.png" alt="face3"></span>
+                </div>
+                <div class="image" data-name="arts"><span><img src="sketchs_img/art1.png" alt="art1"></span></div>
+            </div>
+        </div>
+        <!-- fullscreen img preview box -->
+        <div class="preview-box">
+            <div class="details">
+                <span class="title">Image Category: <p></p></span>
+                <span class="icon fas fa-times"></span>
+            </div>
+            <div class="image-box"><img src="" alt=""></div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+
+    <!--     page 7 contect    -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact me </h1>
+                    <br>
+                    <p> <i class="fa-solid fa-paper-plane"></i>Email :- aniketgupta721@gmail.com</p>
+                    <br>
+                    <p><i class="fa-solid fa-phone"></i>Contact No :- 8657115926</p>
+
+                    <!-- above apna social media ka icon lagana hai like insta, facebook,lionkedin etc....  -->
+                    <div class="social-icons">
+                        <a href="https://github.com/ANIKET-GUPTA31" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/u/Aniket-gupta31/" target="_blank"><i
+                                class="fa-solid fa-bug"></i></a>
+                        <a href="https://www.instagram.com/aniket_gupta721/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aniket-gupta-technology-enthusiast/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="image/Aniket resume.pdf" target="_blank" download class="btn btn2"><i
+                            class="fa-solid fa-download"></i> Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+
+                        <input type="text" name="Name" placeholder=" Enter Your Name " required>
+                        <input type="email" name="Email" placeholder="enter your email" required>
+
+                        <textarea name="Message" rows="6" placeholder="your message" required></textarea>
+                        <button type="submit" class="btn btn2"><i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            Submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p><span>copyright © </span><i class="fa-solidfa-heart"><i>aniket gupta </p>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+
+    <!-- for storing form in google sheet  -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyONc-2SsYh9aRxo8F51GjrJOMBllHhXFNHyH8Db5myoO51uFifUloP5C8KOFhxEPeECA/exec'  //google sheet form link 
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1500
+        });
+    </script>
+</body>
+
+</html>
