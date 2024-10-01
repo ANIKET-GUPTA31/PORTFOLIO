@@ -29,9 +29,48 @@
     </script>
 
 
+<!-- This is for the animation of the cursor. -->
+    <style>
+        .trail {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #59b2f4;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: fade 1s forwards;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('mousemove', (e) => {
+            const trail = document.createElement('div');
+            trail.classList.add('trail');
+            document.body.appendChild(trail);
+            trail.style.left = e.pageX + 'px';
+            trail.style.top = e.pageY + 'px';
+
+            setTimeout(() => {
+                trail.remove();
+            }, 500);
+        });
+    </script>
+
+
     <!-- for scrolling up  -->
     <div class="scrollup">
-        <i class="fas fa-angle-up"><a href="#header"><br> Top </a></i>
+        <div class="scroll"><i class="fas fa-angle-up"><a href="#header"> Top</a></i></div>
     </div>
 
     <!-- -------------page 1 home------------- -->
@@ -119,7 +158,7 @@
 
 
     </div>
-
+    
     <!---------- page 2 ABOUT  ------->
     <div id="about">
         <div class="container">
@@ -226,7 +265,7 @@
 
         <div class="slider-wrapper-page3">
             <button id="prev-slide" class="slide-button material-symbols-rounded">
-                chevron_left
+                <!-- chevron_left -->
             </button>
 
             <div class="work-list page3">
@@ -344,7 +383,7 @@
 
             </div>
             <button id="next-slide" class="slide-button material-symbols-rounded">
-                chevron_right
+                <!-- chevron_right -->
             </button>
         </div>
 
