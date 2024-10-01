@@ -225,10 +225,13 @@ input:checked+.slider:before {
     cursor: pointer;
     background: #59b2f4;
     border-radius: 50%;
-    text-align: center;
-    justify-content: center;
     z-index: 4;
     animation: floattop 4s ease-in-out infinite;
+}
+.scroll{
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 @keyframes floattop {
@@ -248,7 +251,7 @@ input:checked+.slider:before {
 .scrollup a {
     position: relative;
     text-decoration: none;
-    color: #080808;
+    color: #ffffff;
     text-align: center;
     justify-content: center;
 
@@ -393,6 +396,7 @@ section {
 .home-img:hover::before {
     inset: -20px 0px;
 }
+
 
 @keyframes animate {
     0% {
@@ -689,6 +693,7 @@ body.dark-theme .btn:hover::before {
     z-index: 0;
     position: absolute;
 }
+
 .about-col-1 img {
     position: relative;  
     width: 40%;
